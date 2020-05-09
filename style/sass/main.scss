@@ -1,0 +1,69 @@
+@import './variables';
+
+.book {
+  width: 100%;
+  height: calc(100vh - 57px);
+  background: center / cover no-repeat url('../../img/background.jpg');
+  @include flexCenter;
+  @media (max-width: $xs-screen) {
+    display: none;
+  }
+}
+.book-info {
+  @include boxArea;
+  width: 475px;
+  padding: 15px 32px 24px 32px;
+  position: relative;
+  left: -210px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  & :not(:first-child) {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  @media (max-width: $md-screen) {
+    left: 0;
+  }
+}
+.book-info-header {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 15px;
+  @include textDecoration; 
+}
+.info-addition,
+.country-put {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  border: 1px solid #EBEBEB;
+  border-radius: 4px;
+  height: 48px;
+  cursor: pointer;
+  @include activeElement($seatch-button-color);
+}
+.book-places,
+.country-put {
+  width: 100%;
+  color: #484848;
+}
+.book-addition,
+.info-addition {
+  width: 50%;
+  color: #484848;
+}
+.book-submit {
+  height: 48px;
+  background-color: $seatch-button-color;
+  color: white;
+  border: 1px solid $seatch-button-color;
+  border-radius: 4px;
+  &:hover {
+    background-color: $booking-color;
+    border: 1px solid $booking-color;
+  }
+}
+

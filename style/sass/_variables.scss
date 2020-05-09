@@ -1,0 +1,37 @@
+$main-font-size: 16px;
+$main-color-text: #222222;
+$booking-color: #18C6D1;
+$seatch-button-color: #FF5A5F;
+$card-background-color: #FFFFFF;
+$lg-screen: 1250px;
+$md-screen: 940px;
+$sm-screen: 640px;
+$xs-screen: 574px;
+
+@mixin boxArea  {
+  -webkit-box-shadow: 10px 10px 26px -4px rgba(0,0,0,0.72);
+  -moz-box-shadow: 10px 10px 26px -4px rgba(0,0,0,0.72);
+  box-shadow: 10px 10px 26px -4px rgba(0,0,0,0.72);
+  border-radius: 4px;
+  background-color: $card-background-color;
+  &:hover {
+    background-color: darken($card-background-color, 8%);
+    border: darken($card-background-color, 10%);
+  }
+}
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin activeElement($color) {
+  &:hover, &:active, &:focus  {
+    border-color: $color;
+    outline: none;
+  }
+}
+
+@mixin textDecoration {
+  text-shadow: 5px 3px 8px rgba(255,153,0,0.58);
+} 

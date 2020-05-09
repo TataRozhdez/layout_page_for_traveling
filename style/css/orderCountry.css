@@ -1,0 +1,126 @@
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1220px;
+  height: 1300px;
+  margin: 0 auto;
+}
+.offer img {
+  width: 290px;
+  height: 330px;
+}
+@media (max-width: 1250px) {
+  .offer {
+    height: auto;
+    width: auto;
+  }
+}
+
+.cards-countrys {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(4, 290px);
+  grid-template-rows: 525px 525px;
+  text-align: center;
+}
+@media (max-width: 1250px) {
+  .cards-countrys {
+    grid-template-columns: repeat(2, 290px);
+    grid-template-rows: repeat(4, 525px);
+  }
+}
+@media (max-width: 640px) {
+  .cards-countrys {
+    grid-template-columns: 290px;
+    grid-template-rows: repeat(5, 525px);
+  }
+}
+
+.country {
+  -webkit-box-shadow: 10px 10px 26px -4px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 10px 10px 26px -4px rgba(0, 0, 0, 0.72);
+  box-shadow: 10px 10px 26px -4px rgba(0, 0, 0, 0.72);
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  color: #222222;
+  animation: flipInX;
+}
+.country:hover {
+  background-color: #ebebeb;
+  border: #e6e6e6;
+}
+
+.country-1 {
+  animation-delay: 2;
+}
+
+.country-2 {
+  animation-delay: 4;
+}
+
+.country-3 {
+  animation-delay: 6;
+}
+
+.country-4 {
+  animation-delay: 8;
+}
+
+.country-5 {
+  animation-delay: 10;
+}
+
+.country-6 {
+  animation-delay: 12;
+}
+
+.country-7 {
+  animation-delay: 14;
+}
+
+.country-8 {
+  animation-delay: 16;
+}
+
+.country-name {
+  font-size: 26px;
+  line-height: 16px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  text-shadow: 5px 3px 8px rgba(255, 153, 0, 0.58);
+}
+
+em {
+  color: #ff9900;
+}
+
+.country-explain {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.country-price {
+  margin-top: 11px;
+  margin-bottom: 11px;
+  font-style: italic;
+}
+
+.btn-submit {
+  background-color: #18C6D1;
+  border: 1px solid #18C6D1;
+  border-radius: 4px;
+  color: #FFFFFF;
+  height: 33px;
+}
+.btn-submit:hover {
+  background-color: #ff9900;
+}
+.btn-submit:hover, .btn-submit:active, .btn-submit:focus {
+  border-color: #ff9900;
+  outline: none;
+}
+
+/*# sourceMappingURL=orderCountry.css.map */

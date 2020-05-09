@@ -1,0 +1,26 @@
+@import './variables';
+
+.foot-content {
+  background-color: rgba(107, 176, 180, 0.349);
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-size: $main-font-size;
+  line-height: 20px;
+  color: $main-color-text;
+  font-style: italic;
+}
+.social-link {
+  color: #FFFFFF;
+  font-style: normal;
+  &:not(:last-child) {
+    padding-right: 23px;
+  }
+  &:hover {
+    text-decoration: underline;
+    color: darken($main-color-text, 30%);
+  }
+}

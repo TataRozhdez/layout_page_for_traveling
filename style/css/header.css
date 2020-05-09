@@ -1,0 +1,24 @@
+.head-content {
+  background-color: #222222;
+  height: 57px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+  line-height: 20px;
+  padding-right: 20%;
+}
+
+.menu-link {
+  color: #FFFFFF;
+}
+.menu-link:not(:last-child) {
+  padding-right: 23px;
+}
+.menu-link:hover {
+  text-decoration: underline;
+  color: #18C6D1;
+}
+
+/*# sourceMappingURL=header.css.map */

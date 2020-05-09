@@ -1,0 +1,79 @@
+@import './variables';
+
+.offer {
+  @include flexCenter;
+  width: 1220px;
+  height: 1300px;
+  margin: 0 auto;
+  & img {
+    width: 290px;
+    height: 330px;
+  }
+  @media (max-width: $lg-screen) {
+    height: auto;
+    width: auto;
+  }
+}
+.cards-countrys {
+  display: grid;
+  grid: {
+    column-gap: 20px;
+    row-gap: 20px;
+    template-columns: repeat(4, 290px);
+    template-rows: 525px 525px; 
+  }
+  text-align: center;
+  @media (max-width: $lg-screen) {
+    grid: {
+      template-columns: repeat(2, 290px);
+      template-rows: repeat(4, 525px); 
+    }
+  }
+  @media (max-width: $sm-screen) {
+    grid: {
+      template-columns:  290px;
+      template-rows: repeat(5, 525px); 
+    }
+  }
+}
+.country {
+  @include boxArea;
+  font-size: $main-font-size;
+  color: $main-color-text;
+  animation: flipInX;
+}
+
+@for $i from 1 through 8 {
+  .country-#{$i} { animation-delay: 2 * $i; }
+}
+
+.country-name {
+  font-size: 26px;
+  line-height: 16px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  @include textDecoration; 
+}
+em {
+  color: #ff9900;
+}
+.country-explain {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.country-price {
+  margin-top: 11px;
+  margin-bottom: 11px;
+  font-style: italic;
+}
+.btn-submit {
+  background-color: $booking-color;
+  border: 1px solid $booking-color;
+  border-radius: 4px;
+  color: $card-background-color;
+  height: 33px;
+  &:hover {
+    background-color: #ff9900;
+  }
+  @include activeElement(#ff9900);
+}

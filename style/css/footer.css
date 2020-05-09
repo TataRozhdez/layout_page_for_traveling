@@ -1,0 +1,27 @@
+.foot-content {
+  background-color: rgba(107, 176, 180, 0.349);
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  font-style: italic;
+}
+
+.social-link {
+  color: #FFFFFF;
+  font-style: normal;
+}
+.social-link:not(:last-child) {
+  padding-right: 23px;
+}
+.social-link:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+/*# sourceMappingURL=footer.css.map */

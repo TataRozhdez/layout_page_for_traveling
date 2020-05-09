@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/png>
+  <title>TravelUnical</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/all.css">
+  <link rel="stylesheet" href="./style/animate.css">
+</head>
+<body>
+  <header class="head-content">
+    <nav class="menu">
+      <a href="#" class="menu-link">Shop</a>
+      <a href="#" class="menu-link">Home</a>
+      <a href="#" class="menu-link">About</a>
+      <a href="#" class="menu-link">Contact Us</a>
+    </nav>
+  </header>
+  <main>
+    <div class="book">
+      <form class="book-info" action="URL">
+        <h2 class="book-info-header">Бронируйте<br /> уникальное жилье</h2>
+        <label for="place" class="book-places row-one">где</label>
+        <input class="country-put" type="text" id="place" />
+        <label for="arrival" class="book-addition row-two">прибытие</label>
+        <label for="departure" class="book-addition row-three">выезд</label>
+        <input class="info-addition" type="text" id="arrival" />
+        <input class="info-addition" type="text" id="departure" />
+        <label for="adult" class="book-addition row-four">взрослые</label>
+        <label for="children" class="book-addition row-five">дети</label>
+        <input class="info-addition" type="text" id="adult" />
+        <input class="info-addition" type="text" id="children" />
+        <button class="book-submit" type="submit">Начать поиск</button>
+      </form>
+    </div>
+    <div class="offer">
+      <div class="cards-countrys">
+        <div class="country wow">
+          <img src="./img/india.jpg" alt="India" />
+          <h3 class="country-name">Индия <em>&#9733;5.0</em></h3>
+          <p class="country-explain">Прочувствуйте страну контрастов - смесь религий и природы</p>
+          <p class="country-price">От 500$</p>
+          <button class="btn-submit" type="submit">Бронировать</button>
+        </div>
+        <div class="country wow">
+          <img src="./img/nepal.jpg" alt="Nepal" />
+          <h3 class="country-name">Непал <em>&#9733;4.9</em></h3>
+          <p class="country-explain">Спокойствие и уравновешенность гор наполнят каждого желающего</p>
+          <p class="country-price">От 1000$</p>
+          <button class="btn-submit" type="submit">Бронировать</button>
+        </div>
+        <div class="country wow">
+          <img src="./img/japan.jpg" alt="Japan" />
+          <h3 class="country-name">Япония <em>&#9733;4.3</em></h3>
+          <p class="country-explain">Сладкое цветение сакуры и горы - мечта каждого натуралиста</p>
+          <p class="country-price">От 1200$</p>
+          <button class="btn-submit" type="submit">Бронировать</button>
+        </div>
+        <div class="country wow">
+          <img src="./img/indonezia.jpg" alt="indonezia" />
+          <h3 class="country-name">Индонезия <em>&#9733;4.6</em></h3>
+          <p class="country-explain">Хижина на берегу океана и тропический лес и жаркое солнце</p>
+          <p class="country-price">От 700$</p>
+          <button class="btn-submit" type="submit">Бронировать</button>
+        </div>
+        <div class="country wow">
+          <img src="./img/philippines.jpg" alt="philippines" />
+          <h3 class="country-name">Филиппины <em> &#9733;4.7</em></h3>
+          <p class="country-explain">Вкусная кухня, удивительная флора и фауна, роскошный дайвинг</p>
+          <p class="country-price">От 1000$</p>
+          <button class="btn-submit" type="submit">Бронировать</button>
+        </div>
+        <div class="country wow">
+          <img src="./img/thailand.jpeg" alt="thailand" />
+          <h2 class="country-name">Таиланд <em>&#9733;4.8</em></h2>
+          <p class="country-explain">Королевстве множества разнообразных курортов и массажа</p>
+          <p class="country-price">От 600$</p>
+          <button class="btn-submit" type="submit">Бронировать</button>
+        </div>
+        <div class="country wow">
+          <img src="./img/tibet.jpg" alt="tibet" />
+          <h2 class="country-name">Тибет <em>&#9733;4.9</em></h2>
+          <p class="country-explain">Здешняя гора Кайлас именуется в древних свитках центром мира</p>
+          <p class="country-price">От 900$</p>
+          <button class="btn-submit" type="submit">Бронировать</button>
+        </div>
+        <div class="country wow">
+          <img src="./img/vietnam.jpg" alt="vietnam" />
+          <h2 class="country-name">Вьетнам <em>&#9733;4.6</em></h2>
+          <p class="country-explain">Вьетнам сказочен, полон загадок и тайн</p>
+          <p class="country-price">От 700$</p>
+          <button class="btn-submit" type="submit">Бронировать</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <span class="foot-content">Create by&#160;<a class="social-link" href="https://github.com/TataRozhdez">TataRozhdez</a></span>
+  </footer>
+  <script src="./src/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>
